@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     rc = settimeofday(&tv, &tz);
     sleep(1); // TODO: make the jumps more subtle, in the millisecond range
     if (rc != 0) {
-      printf("problema: errno = %d\n",errno);
+      printf("problem: errno = %d\n",errno);
       return -1;
     }
   }
